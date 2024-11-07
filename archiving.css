@@ -1,0 +1,122 @@
+/* 기본 스타일 초기화 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("jisoo\Helvetica.ttf") format("truetype");
+}
+
+/* 고정된 헤더 스타일 */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* 화면 너비에 맞게 100%로 설정 */
+  height: 6.67vh; /* 182px을 1080px 기준으로 비율 변환 */
+  background-color: blue;
+  border: solid #000;
+  border-width: 0.1vh 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+  font-family: "Helvetica";
+}
+
+.menu {
+  position: absolute;
+  font-size: 2.22vh;
+  color: black;
+  cursor: pointer;
+  top: 2.69vh;
+}
+
+.about {
+  left: 2.6vw;
+}
+
+.connect {
+  left: 10.88vw;
+}
+
+.modeling {
+  left: 20.63vw;
+}
+
+/* 제목(홈버튼) */
+.project-text {
+  position: absolute;
+  width: 7.55vw; /* 145px을 1920px 기준으로 비율 변환 */
+  height: 3.98vh; /* 43px을 1080px 기준으로 비율 변환 */
+  background-color: orange;
+  /* font-family: "Helvetica"; */
+  font-size: 1.875vw; /* 36px을 1920px 기준으로 비율 변환 */
+  font-weight: 700;
+  color: black;
+  line-height: 3.98vh;
+  letter-spacing: -0.02em;
+  transform: translateX(-50%) rotate(0.04deg);
+  left: 50%;
+}
+
+/* 섹션 스타일 */
+.section-container {
+  font-family: "Helvetica";
+  position: relative;
+  top: 16.85vh; /* 헤더 높이 */
+}
+
+.section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.35vw;
+}
+
+/* 레이어 스타일 */
+.text-layer {
+  width: 46.56vw; /* 894px을 1920px 기준으로 비율 변환 */
+}
+
+/* 큰 레이어 */
+.large-layer {
+  top: 33.43vh; /* 361px을 1080px 기준으로 비율 변환 */
+  height: 76.57vh; /* 827px을 1080px 기준으로 비율 변환 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 작은 레이어 */
+.small-layer {
+  width: 32.45vw; /* 589px을 큰 레이어 너비 기준으로 비율 변환 */
+  height: 100%; /* 큰 레이어 높이만큼 차지 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 이미지 스타일 */
+.layer-image {
+  width: 100%;
+  height: 94.8%; /* 이미지 높이 */
+  background-color: lightgray;
+  object-fit: cover;
+}
+
+/* 텍스트 스타일 */
+.layer-text {
+  font-size: 1.85vh; /* 20px을 1080px 기준으로 비율 변환 */
+  color: black;
+  text-align: left;
+  align-self: flex-start; /* 왼쪽 정렬 추가 */
+  transform: rotate(0.04deg);
+}
